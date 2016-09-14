@@ -21,7 +21,7 @@
     <nav id="main-menu">
         <ul>
             <li><a href="">Praesentium</a></li>
-            <li class="selected"><a href="">Voluptatum</a></li>
+            <li><a href="">Voluptatum</a></li>
             <li><a href="">Dignissimos</a></li>
             <li><a href="">Blanditiis</a></li>
         </ul>
@@ -63,13 +63,13 @@
                     <div class="input-group">
                         <div class="label">Date of birth</div>
                         <div class="field">
-                            <select>
+                            <select class="select">
                                 <option value="">MONTH</option>
                             </select>
-                            <select>
+                            <select class="select">
                                 <option value="">DAY</option>
                             </select>
-                            <select>
+                            <select class="select">
                                 <option value="">YEAR</option>
                             </select>
                         </div>
@@ -78,19 +78,23 @@
                     <div class="input-group">
                         <div class="label" style="margin-top: 0;">Gender</div>
                         <div class="field">
-                            <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+
+                            <input type="radio" name="gender" id="female" style="margin-left: 0;"> <label for="female">Female</label>
                             <input type="radio" name="gender" id="male"> <label for="male">Male</label>
                         </div>
                     </div>
 
                     <div class="input-group">
-                        <div class="label"><input type="checkbox"></div>
+                        <div class="label" style="margin-top: 0;"><input type="checkbox" id="checkbox"></div>
                         <div class="field">
-                            Proin sit amet lectus venenatis, consectetur
-                            magna vitae, convallis diam. Nullam iaculis.
+                            <label for="checkbox">
+                                Proin sit amet lectus venenatis, consectetur
+                                magna vitae, convallis diam. Nullam iaculis.
+                            </label>
                         </div>
                     </div>
-                    <div class="cards"></div>
+                    <div class="cards">
+                    </div>
                     <div class="input-group">
                         <input type="submit" value="Submit">
                     </div>
