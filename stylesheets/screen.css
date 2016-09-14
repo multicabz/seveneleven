@@ -275,3 +275,71 @@ a {
 .select option:nth-child(2n) {
   background-color: #f5f5f5;
 }
+
+/*To do remove*/
+/* line 197, ../sass/screen.scss */
+label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+}
+
+/* line 204, ../sass/screen.scss */
+input[type=radio] {
+  display: none;
+}
+
+/* line 207, ../sass/screen.scss */
+label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #ececec;
+}
+
+/* line 221, ../sass/screen.scss */
+.radio label:before {
+  border-radius: 10px;
+}
+
+/* line 225, ../sass/screen.scss */
+input[type=radio]:checked + label:before {
+  content: "\2022";
+  color: #ee6c00;
+  font-size: 42px;
+  text-align: center;
+  line-height: 20px;
+}
+
+/* line 233, ../sass/screen.scss */
+input[type=checkbox] {
+  display: none;
+}
+
+/* line 237, ../sass/screen.scss */
+.checkbox label {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* line 242, ../sass/screen.scss */
+.checkbox label:before {
+  border-radius: 3px;
+}
+
+/* line 245, ../sass/screen.scss */
+input[type=checkbox]:checked + label:before {
+  content: "\2713";
+  color: #ee6c00;
+  font-size: 20px;
+  text-align: center;
+  line-height: 15px;
+  margin-top: 100px;
+}
